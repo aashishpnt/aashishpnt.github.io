@@ -4,37 +4,62 @@
     <meta charset="UTF-8">
 
     <style>
-        .main{
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
             text-align: center;
         }
-        .box{
+
+        .box {
             width: 480px;
-            background:white;
+            background: white;
             padding: 20px;
             text-align: center;
             margin: auto;
             margin-top: 1%;
-            color:  black;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        table {
-        position: relative;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: auto;
-        border: 1px solid black;
-        text-align: center"
-      }
 
-        td, th {
-          border: solid black;
-          text-align: center;
-          padding: auto;
-          background-color: grey;
-      }
-      </style>
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        #loading {
+            font-size: 20px;
+            margin-top: 20%;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body bgcolor="white">
     <div id="loading">LOADING.....</div>
