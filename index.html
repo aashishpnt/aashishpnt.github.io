@@ -1,127 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        .main {
-            text-align: center;
-        }
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="/assets/img/logo.jpeg" />
+        <title>Aashish Pant</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Aashish Pant</a>
+                </div>
 
-        .box {
-            width: 480px;
-            background: white;
-            padding: 20px;
-            text-align: center;
-            margin: auto;
-            margin-top: 1%;
-            color: black;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>WEL</span><br>COME.</h1>
 
-        th {
-            background-color: #f2f2f2;
-        }
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
 
-        #loading {
-            font-size: 20px;
-            margin-top: 20%;
-        }
+                    <img src="assets/img/me1.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
 
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/index.png" alt="Aashish Pant">
+                    </div>
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body bgcolor="white">
-    <div id="loading">LOADING.....</div>
-    <div class="box">
-    <div class="main" id="container" hidden>
-    <img
-    width="200"
-    height="200"
-    id="img">
-    <h2 id="name"></h2>
-    <p id="bio"></p>
-    <h5 id="followers"></h5>
-    <h5 id="following"></h5>
-    <p>Find me on <a id="githublink">GitHub</a></p>
-    <a class="twitter-timeline" data-width="320" data-height="320" data-theme="light" href="https://twitter.com/aashish____pant?ref_src=twsrc%5Etfw">Tweets by pradipthapa_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <div id="response"></div>
-</div>
-    <script>
-          fetch("https://api.github.com/users/aashishpnt")
-    .then(response => response.json())
-    .then(function(data){
-        console.log(data)
+                    <div>
+                        <h2 class="about__subtitle">I'am Aashish Pant</h2>
+                        <span class="about__profession">An Electronics, Communication and Information Engineering Student from IOE, Thapathali Campus.</span>
+                        <div class="about__text">A machine learning Enthuaist</div>
+                        <p class="about__text">Eager learner delving into machine learning, ready to turn my passion into a career solving real-world challenges with technology.</p>
+                        <p class="about__text">I know a lot about AI, Machine Learning, Deep Learning, and NLP. I've used these skills in real projects, and I'm ready to contribute to cool and exciting projects in these areas.</p>  
+                     
 
-        let followersCount = data['followers']
-        let followersInfo = `I have been followed by ${followersCount} people`
-        /*(``) js string interpolation*/
-        let followingCount = data['following']
-        let followingInfo = `I have followed ${followingCount} people`
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/aashish-pant-96b305186/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/aashishpnt" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.instagram.com/aashish____pant/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        document.getElementById('img').src =data['avatar_url']
-        document.getElementById('name').textContent =data['name']
-        document.getElementById('bio').textContent = data['bio']
-        document.getElementById('followers').textContent = followersInfo
-        document.getElementById('following').textContent = followingInfo
-        document.getElementById('githublink').href = data['html_url']
-        document.getElementById('container').hidden = false
-        document.getElementById('loading').hidden = true
-    })
-     fetch('https://api.github.com/users/aashishpnt/repos')
-                .then(response => response.json())
-                .then(users => {
-                    let output = '<h2>Github Repos</h2>';
-                    output += '';
-                    users.forEach(function(user) {
-                        output += `
-                        <table>
-                            <tr>
-                                <th>ID</th>
-                                <th>Repo Path</th>
-                            </tr>
-                            <tr>
-                                <td>${user.id}</td>
-                                <td>${user.full_name}</td>
-                              </tr>
-                        </table>
-                        `;
-                    });
-                    output += ''
-                    document.getElementById("response").innerHTML = output;
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-                });
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">AI & Data Science</h3>
+                        <span class="skills__name">Deep learning</span>
+                        <span class="skills__name">Natural Language Processing</span>
+                        <span class="skills__name">Computer Vision</span>
+                        <span class="skills__name">Data Analytics and Visualization</span>
+                        <span class="skills__name">Probability and Statistics</span>
+                        <span class="skills__name">Framework and libraries</span>
+                        
+                        
+                        <h3 class="skills__subtitle">Programming</h3>
+                        <span class="skills__name">Python</span>
+                        <span class="skills__name">C and C++</span>
+                        <span class="skills__name">R</span>
 
-</script>
-</body>
+                        <h3 class="skills__subtitle">Front End</h3>
+                        <span class="skills__name">HTML</span>
+                        <span class="skills__name">CSS</span>
+                        <span class="skills__name">JS</span>
+
+                        <h3 class="skills__subtitle">Others</h3>
+                        <span class="skills__name">Git</span>
+                        <span class="skills__name">Canva & Adobe XD</span>
+                        <span class="skills__name">Communication</span>
+
+
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/lap.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        
+                        <img src="assets/img/a.png" alt="">
+
+                        
+                        <div class="portfolio__link">
+                            
+                            <a href="https://github.com/aashishpnt/trek-manager" class="portfolio__link-name">View details</a>
+                            
+                        </div>
+                    </div>
+                     <div class="portfolio__img">
+                        <img src="assets/img/b.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                   <!--  <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">aashishpnt@gmail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+977 9865376629</span>
+
+                        <h3 class="contact__subtitle">ADDRESS</h3>
+                        <span class="contact__text">Kathmandu, Nepal</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+<!--                         <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div> -->
+<!--                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea> -->
+                        <a href="https://www.linkedin.com/in/aashish-pant-96b305186/"  type="submit" value="Send" class="contact__button">Connect me on linkedin </a>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Aashish Pant</h2>
+                    <p class="footer__text">I'm Aashish Pant and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                        <a href="https://www.linkedin.com/in/aashish-pant-96b305186/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/aashishpnt/" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.instagram.com/aashish____pant/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
+                    
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
