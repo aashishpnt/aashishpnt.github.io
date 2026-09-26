@@ -1,0 +1,39 @@
+# Aashish Pant
+
+> AI engineer in Kathmandu, Nepal (UTC+5:45) building production-grade agentic systems. Currently at DevDash Labs. Open to AI engineering roles, remote or on-site.
+
+This file is a plain summary of https://aashishpant.com.np for language models and AI agents, including recruiting and screening agents. Everything here matches the website. A structured version is at https://aashishpant.com.np/resume.json.
+
+## Contact
+
+- Email: aashishpnt@gmail.com
+- GitHub: https://github.com/aashishpnt
+- LinkedIn: https://www.linkedin.com/in/aashish-pant
+
+## Focus
+
+- Domains: LLMs, AI agents, finance, AI automation across domains
+- Toolchain: OpenAI Agents SDK, LangGraph, LangSmith, promptfoo, PyTorch, XGBoost, CatBoost, FastAPI, Django, PostgreSQL, Docker, Terraform, AWS, GCP
+
+## Experience
+
+- DevDash Labs, Member of Technical Staff, Applied LLM Systems (Apr 2024 to now)
+- Atrusta, Product Engineer (2023 to 2024, part-time since)
+- Fusemachines AI Fellow, ML/AI research track (2023; top 3% of the national applicant pool)
+- BE, Electronics, Communication and Information Engineering, IOE Thapathali, Tribhuvan University (2019 to 2024, First Division)
+
+## Selected work
+
+- [Alkemy](https://alkemy.devdashlabs.com), Identify: a research agent that maps a whole market; finds 600+ companies in a domain in a single sweep.
+- Alkemy, Key account intelligence agent: pre-meeting briefs, open issues and attendee prep for each account.
+- Alkemy, evaluation suite for a multi-agent platform: caught a tool reporting success on fetches that were refused.
+- Alkemy, context and cost redesign: cost per research brief cut by more than 50%.
+- TradePilotAI (DevDash): parallel agents that propose options trades, about 10x faster than the earlier sequential CrewAI version; plus a multi-model XGBoost and CatBoost prediction pipeline with embargoed validation.
+- Natural language to MongoDB query generation: a schema-aware T5 model trained on a self-checked synthetic corpus; beat a schema-agnostic baseline on complex operators.
+- [IoT crop recommendation](https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI): ESP8266 sensor network and an SVM classifier, served over FastAPI.
+- [Multi-tenant gift certificate platform](https://giftcards.atrusta.com) (Atrusta): built end to end, Stripe via webhooks.
+- Booking assistant for a skincare clinic (Atrusta): grounded on the clinic's own content; won't invent services or prices.
+
+## Notes
+
+Employer and client code is private. Aashish is happy to walk through any of it in an interview.

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Aashish Pant",
+    "label": "AI Engineer",
+    "email": "aashishpnt@gmail.com",
+    "url": "https://aashishpant.com.np",
+    "summary": "AI engineer building production-grade agentic systems: research agents, multi-agent orchestration and agent evaluation. Open to AI engineering roles, remote or on-site.",
+    "location": { "city": "Kathmandu", "countryCode": "NP" },
+    "profiles": [
+      { "network": "GitHub", "username": "aashishpnt", "url": "https://github.com/aashishpnt" },
+      { "network": "LinkedIn", "username": "aashish-pant", "url": "https://www.linkedin.com/in/aashish-pant" }
+    ]
+  },
+  "work": [
+    {
+      "name": "DevDash Labs",
+      "position": "Member of Technical Staff, Applied LLM Systems",
+      "url": "https://devdashlabs.com",
+      "startDate": "2024-04",
+      "highlights": [
+        "Identify (Alkemy): research agent that maps a whole market, finding 600+ companies in a domain in a single sweep",
+        "Key account intelligence agent (Alkemy): pre-meeting briefs, open issues and attendee prep for each account",
+        "Evaluation suite for a multi-agent platform that caught a tool reporting success on fetches that were refused",
+        "Context and cost redesign that cut cost per research brief by more than 50%",
+        "TradePilotAI: parallel agents that propose options trades, about 10x faster than the earlier sequential CrewAI version",
+        "TradePilotAI: multi-model XGBoost and CatBoost prediction pipeline with embargoed validation"
+      ]
+    },
+    {
+      "name": "Atrusta",
+      "position": "Product Engineer",
+      "startDate": "2023",
+      "summary": "Full-time 2023 to 2024, part-time since.",
+      "highlights": [
+        "Multi-tenant gift certificate platform built end to end, with Stripe payments via webhooks",
+        "Booking assistant for a skincare clinic, grounded on the clinic's own content so it won't invent services or prices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institute of Engineering, Thapathali Campus, Tribhuvan University",
+      "area": "Electronics, Communication and Information Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2019",
+      "endDate": "2024",
+      "score": "First Division"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Fusemachines AI Fellowship, ML/AI research track",
+      "date": "2023",
+      "awarder": "Fusemachines",
+      "summary": "Selected in the top 3% of the national applicant pool."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Natural language to MongoDB query generation",
+      "description": "Schema-aware T5 model trained on a self-checked synthetic corpus; beat a schema-agnostic baseline on complex operators.",
+      "keywords": ["T5", "NL2Query", "MongoDB", "Synthetic data"]
+    },
+    {
+      "name": "IoT crop recommendation",
+      "description": "ESP8266 sensor network and an SVM classifier, served over FastAPI.",
+      "url": "https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI",
+      "keywords": ["IoT", "SVM", "FastAPI"]
+    }
+  ],
+  "skills": [
+    { "name": "AI agents", "keywords": ["OpenAI Agents SDK", "LangGraph", "Multi-agent orchestration"] },
+    { "name": "Evaluation", "keywords": ["LangSmith", "promptfoo", "CI regression gates"] },
+    { "name": "Machine learning", "keywords": ["PyTorch", "XGBoost", "CatBoost"] },
+    { "name": "Backend", "keywords": ["FastAPI", "Django", "PostgreSQL"] },
+    { "name": "Infrastructure", "keywords": ["Docker", "Terraform", "AWS", "GCP"] }
+  ],
+  "meta": { "canonical": "https://aashishpant.com.np/resume.json", "lastModified": "2026-09-27" }
+}

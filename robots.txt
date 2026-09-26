@@ -1,0 +1,8 @@
+# Humans, search engines and AI agents are all welcome.
+# A short summary for language models is at /llms.txt,
+# and a machine-readable resume is at /resume.json.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://aashishpant.com.np/sitemap.xml
