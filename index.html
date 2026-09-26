@@ -1,226 +1,151 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aashish Pant, AI engineer</title>
+<meta name="description" content="AI engineer in Kathmandu building production-grade agentic systems. Open to AI engineering roles.">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --ink:#111; --muted:#555; --faint:#8a8a8a; --rule:#111; --hair:#d6d6d6;
+  --band:#f2f2f2; --accent:#c8102e;
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#121212; --ink:#ececec; --muted:#a8a8a8; --faint:#707070; --rule:#ececec; --hair:#333;
+  --band:#1c1c1c; --accent:#ff5a6e;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--accent)}
+.sheet{max-width:52rem;margin:0 auto;padding:2.5rem 1rem 3rem}
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;
+  border-bottom:3px solid var(--rule);padding-bottom:.6rem}
+.top h1{font-size:2.6rem;font-weight:700;letter-spacing:-.02em;line-height:1;margin:0}
+.pn{font-family:var(--mono);font-size:.78rem;text-align:right;color:var(--muted);line-height:1.6}
+.pn b{color:var(--ink);font-weight:500}
+.tagline{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  border-bottom:1px solid var(--rule);padding:.5rem 0;font-weight:500}
+.tagline span:last-child{font-family:var(--mono);font-size:.78rem;color:var(--accent);align-self:center}
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" href="/assets/img/logo.jpeg" />
-        <title>Aashish Pant</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Aashish Pant</a>
-                </div>
+h2{display:flex;gap:.6rem;align-items:baseline;font-size:.8rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;margin:2.2rem 0 .7rem;padding-bottom:.3rem;border-bottom:1px solid var(--rule)}
+h2 i{font-style:normal;font-family:var(--mono);font-weight:500;color:var(--accent)}
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>WEL</span><br>COME.</h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
-
-                    <img src="assets/img/me1.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/index.png" alt="Aashish Pant">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Aashish Pant</h2>
-                        <span class="about__profession">An Electronics, Communication and Information Engineering Student from IOE, Thapathali Campus.</span>
-                        <div class="about__text">A machine learning Enthuaist</div>
-                        <p class="about__text">Eager learner delving into machine learning, ready to turn my passion into a career solving real-world challenges with technology.</p>
-                        <p class="about__text">I know a lot about AI, Machine Learning, Deep Learning, and NLP. I've used these skills in real projects, and I'm ready to contribute to cool and exciting projects in these areas.</p>  
-                     
-
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/aashish-pant-96b305186/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/aashishpnt" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://www.instagram.com/aashish____pant/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">AI & Data Science</h3>
-                        <span class="skills__name">Deep learning</span>
-                        <span class="skills__name">Natural Language Processing</span>
-                        <span class="skills__name">Computer Vision</span>
-                        <span class="skills__name">Data Analytics and Visualization</span>
-                        <span class="skills__name">Probability and Statistics</span>
-                        <span class="skills__name">Framework and libraries</span>
-                        
-                        
-                        <h3 class="skills__subtitle">Programming</h3>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">C and C++</span>
-                        <span class="skills__name">R</span>
-
-                        <h3 class="skills__subtitle">Front End</h3>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__name">JS</span>
-
-                        <h3 class="skills__subtitle">Others</h3>
-                        <span class="skills__name">Git</span>
-                        <span class="skills__name">Canva & Adobe XD</span>
-                        <span class="skills__name">Communication</span>
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th{text-align:left;font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  background:var(--band);padding:.45rem .6rem;border-bottom:1px solid var(--rule)}
+td{padding:.5rem .6rem;border-bottom:1px solid var(--hair);vertical-align:top}
+td.num{font-family:var(--mono);text-align:right;white-space:nowrap}
+td.m{font-family:var(--mono);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.ops td:first-child{width:9rem;font-weight:500}
+.ops td.m{white-space:normal}
+td small{display:block;color:var(--muted);font-size:.82rem}
 
 
-                    </div>
+.order{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--rule)}
+.order a{display:block;padding:.8rem;text-decoration:none;border-right:1px solid var(--rule)}
+.order a:last-child{border-right:0}
+.order a:hover{background:var(--band);color:var(--ink)}
+.order b{display:block;font-family:var(--mono);font-size:.7rem;color:var(--faint);font-weight:400;letter-spacing:.05em}
 
-                    <div class="skills__img">
-                        <img src="assets/img/lap.jpg" alt="">
-                    </div>
-                </div>
-            </section>
+footer{margin-top:2.5rem;border-top:3px solid var(--rule);padding-top:.5rem;display:flex;
+  justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:var(--mono);font-size:.72rem;color:var(--faint)}
 
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
+@media (max-width:640px){
+  .top h1{font-size:2rem}.pn{text-align:left}
+    .order{grid-template-columns:1fr}.order a{border-right:0;border-bottom:1px solid var(--rule)}.order a:last-child{border-bottom:0}
+  .apps td:nth-child(2),.apps th:nth-child(2),.spec td:nth-child(2),.spec th:nth-child(2){display:none}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
 
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/a.png" alt="">
-                        <div class="portfolio__links">
-                            <div class="portfolio__link">
-                                <a href="https://github.com/aashishpnt/trek-manager" class="portfolio__link-name">View Details</a>
-                            </div>
-                            <!-- <div class="portfolio__link">
-                                <a href="link-to-your-code-a" class="portfolio__link-name">View Demo</a>
-                            </div> -->
-                        </div>
-                    </div>
+<header>
+  <div class="top">
+    <h1>Aashish Pant</h1>
+    <div class="pn">PART NO. <b>AP-LLM-26</b><br>Kathmandu, Nepal · UTC+5:45</div>
+  </div>
+  <div class="tagline">
+    <span>AI engineer building production-grade agentic systems</span>
+    <span>STATUS: AVAILABLE</span>
+  </div>
+</header>
 
-                    <div class="portfolio__img">
-                        <img src="assets/img/b.png" alt="">
-                        <div class="portfolio__links">
-                            <div class="portfolio__link">
-                                <a href="https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI" class="portfolio__link-name">View Details</a>
-                            </div>
-                            <!-- <div class="portfolio__link">
-                                <a href="link-to-your-code-b" class="portfolio__link-name">View Demo</a>
-                            </div> -->
-                        </div>
-                    </div>
+<section>
+  <h2><i>1</i>Operating conditions</h2>
+  <table class="ops">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Role</td><td>AI engineer</td></tr>
+    <tr><td>Domains</td><td>LLMs, AI agents, finance, AI automation across domains</td></tr>
+    <tr><td>Location</td><td>Kathmandu, Nepal · UTC+5:45</td></tr>
+    <tr><td>Mode</td><td>Remote or on-site</td></tr>
+    <tr><td>Currently</td><td>DevDash Labs</td></tr>
+    <tr><td>Toolchain</td><td class="m">OpenAI Agents SDK, LangGraph, LangSmith, promptfoo, PyTorch, XGBoost, CatBoost, FastAPI, Django, PostgreSQL, Docker, Terraform, AWS, GCP</td></tr>
+  </table>
+</section>
 
-                    <div class="portfolio__img">
-                        <img src="assets/img/c.png" alt="">
-                        <div class="portfolio__links">
-                            <div class="portfolio__link">
-                                <a href="https://github.com/aashishpnt/stock_prediction" class="portfolio__link-name">View Details</a>
-                            </div>
-                            <div class="portfolio__link">
-                                <a href="https://stockprediction-app.streamlit.app/" class="portfolio__link-name">View Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<section>
+  <h2><i>2</i>Specifications</h2>
+  <table class="spec">
+    <tr><th>Parameter</th><th>Conditions</th><th style="text-align:right">Value</th></tr>
+    <tr><td>Research brief cost, reduction</td><td class="m">tested workloads, A/B verified</td><td class="num">&gt;50%</td></tr>
+    <tr><td>Agent pipeline latency, reduction</td><td class="m">sequential → parallel</td><td class="num">~10×</td></tr>
+    <tr><td>Shipping production software</td><td class="m">since mid 2023</td><td class="num">3 yr</td></tr>
+    <tr><td>Fusemachines AI Fellowship</td><td class="m">national applicant pool</td><td class="num">top 3%</td></tr>
+  </table>
+</section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+<section>
+  <h2><i>3</i>Typical applications</h2>
+  <table class="apps">
+    <tr><th>Application</th><th>Where</th><th>Result</th></tr>
+    <tr><td>Identify: research agent that maps a whole market</td><td class="m"><a href="https://alkemy.devdashlabs.com">Alkemy</a></td><td>600+ companies in a domain found in a single sweep</td></tr>
+    <tr><td>Key account intelligence agent</td><td class="m"><a href="https://alkemy.devdashlabs.com">Alkemy</a></td><td>Pre-meeting briefs, open issues and attendee prep for each account</td></tr>
+    <tr><td>Evaluation suite for a multi-agent platform</td><td class="m"><a href="https://alkemy.devdashlabs.com">Alkemy</a></td><td>Caught a tool reporting success on fetches that were refused</td></tr>
+    <tr><td>Context and cost redesign</td><td class="m"><a href="https://alkemy.devdashlabs.com">Alkemy</a></td><td>Cost per brief more than halved</td></tr>
+    <tr><td>TradePilotAI: parallel agents that propose options trades</td><td class="m">DevDash</td><td>~10× faster than the sequential CrewAI version</td></tr>
+    <tr><td>TradePilotAI: multi-model prediction pipeline</td><td class="m">DevDash</td><td>Per-session XGBoost and CatBoost models, embargoed validation</td></tr>
+    <tr><td>Natural language to MongoDB query generator on T5</td><td class="m">Research</td><td>Schema-aware T5, trained on a self-checked synthetic corpus, beat a schema-agnostic baseline on complex operators</td></tr>
+    <tr><td>IoT crop recommendation: ESP8266 sensor network and an SVM</td><td class="m"><a href="https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI">IOE</a></td><td>Live soil and field readings in, a crop recommendation out, served over FastAPI</td></tr>
+    <tr><td>Multi-tenant gift certificate platform</td><td class="m"><a href="https://giftcards.atrusta.com">Atrusta</a></td><td>Built end to end, Stripe via webhooks</td></tr>
+    <tr><td>Booking assistant for a skincare clinic</td><td class="m">Atrusta</td><td>Won't invent services or prices</td></tr>
+  </table>
+</section>
 
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">aashishpnt@gmail.com</span>
+<section>
+  <h2><i>4</i>Revision history</h2>
+  <table>
+    <tr><th>Rev</th><th>Date</th><th>Change</th></tr>
+    <tr><td class="m">D</td><td class="m">Apr 2024 – now</td><td>DevDash Labs, Member of Technical Staff, Applied LLM Systems</td></tr>
+    <tr><td class="m">C</td><td class="m">2023 – 2024</td><td>Atrusta, Product Engineer<small>Part-time since</small></td></tr>
+    <tr><td class="m">B</td><td class="m">2023</td><td>Fusemachines AI Fellow, ML/AI research track</td></tr>
+    <tr><td class="m">A</td><td class="m">2019 – 2024</td><td>BE, Electronics, Communication and Information Engineering<small>IOE Thapathali, Tribhuvan University. First Division.</small></td></tr>
+  </table>
+</section>
 
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+977 9865376629</span>
+<section>
+  <h2><i>5</i>Ordering information</h2>
+  <div class="order">
+    <a href="mailto:aashishpnt@gmail.com"><b>EMAIL</b>aashishpnt@gmail.com</a>
+    <a href="https://github.com/aashishpnt"><b>GITHUB</b>aashishpnt</a>
+    <a href="https://www.linkedin.com/in/aashish-pant"><b>LINKEDIN</b>aashish-pant</a>
+  </div>
+</section>
 
-                        <h3 class="contact__subtitle">ADDRESS</h3>
-                        <span class="contact__text">Kathmandu, Nepal</span>
-                    </div>
+<footer>
+  <span>Employer code is private. Happy to walk through any of it.</span>
+  <span>Rev. 2026-09 · Page 1 of 1</span>
+</footer>
 
-                    <form action="" class="contact__form">
-<!--                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div> -->
-<!--                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea> -->
-                        <a href="https://www.linkedin.com/in/aashish-pant-96b305186/"  type="submit" value="Send" class="contact__button">Connect me on linkedin </a>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Aashish Pant</h2>
-                    <p class="footer__text">I'm Aashish Pant and this is my personal website</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                        <a href="https://www.linkedin.com/in/aashish-pant-96b305186/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://github.com/aashishpnt/" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                        <a href="https://www.instagram.com/aashish____pant/" class="about__social-icon"><i class='bx bxl-instagram-alt' ></i></a>
-                    
-                </div>
-
-
-            </div>
-        </footer>
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+</main>
+</body>
 </html>
