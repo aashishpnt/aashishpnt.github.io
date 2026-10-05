@@ -5,11 +5,22 @@
     "label": "AI Engineer",
     "email": "aashishpnt@gmail.com",
     "url": "https://aashishpant.com.np",
-    "summary": "AI engineer building production-grade agentic systems: research agents, multi-agent orchestration and agent evaluation. Open to AI engineering roles, remote or on-site.",
-    "location": { "city": "Kathmandu", "countryCode": "NP" },
+    "summary": "AI engineer who builds AI agents and machine learning models: agents that research companies, and prediction models for stock trading. Open to AI engineering roles, remote or on-site.",
+    "location": {
+      "city": "Kathmandu",
+      "countryCode": "NP"
+    },
     "profiles": [
-      { "network": "GitHub", "username": "aashishpnt", "url": "https://github.com/aashishpnt" },
-      { "network": "LinkedIn", "username": "aashish-pant-96b305186", "url": "https://www.linkedin.com/in/aashish-pant-96b305186/" }
+      {
+        "network": "GitHub",
+        "username": "aashishpnt",
+        "url": "https://github.com/aashishpnt"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "aashish-pant-96b305186",
+        "url": "https://www.linkedin.com/in/aashish-pant-96b305186/"
+      }
     ]
   },
   "work": [
@@ -19,12 +30,13 @@
       "url": "https://devdashlabs.com",
       "startDate": "2024-04",
       "highlights": [
-        "Identify (Alkemy): research agent that maps a whole market, finding 600+ companies in a domain in a single sweep",
-        "Key account intelligence agent (Alkemy): pre-meeting briefs, open issues and attendee prep for each account",
-        "Evaluation suite for a multi-agent platform that caught a tool reporting success on fetches that were refused",
-        "Context and cost redesign that cut cost per research brief by more than 50%",
-        "TradePilotAI: parallel agents that propose options trades, about 10x faster than the earlier sequential CrewAI version",
-        "TradePilotAI: multi-model XGBoost and CatBoost prediction pipeline with embargoed validation"
+        "Key Account Intelligence agent (Alkemy), designed and built its core: researches a client's most important customers, finds who can introduce them, tracks progress and keeps the news up to date",
+        "Introductions agent (Alkemy): works out who knows whom from shared employers and schools, and ranks who can make the best introduction",
+        "Lead-finding agent (Alkemy): searches the web for companies that match a client's ideal customer; found 600+ in one search",
+        "Cut the cost of each company research report by more than half, measured with A/B tests",
+        "Quality checks: every claim in a report is checked against its source, and every agent step against its instructions",
+        "TradePilotAI: models that predict a stock's high, low and price swings for the day from 400+ stock and options signals, tested only on later dates",
+        "TradePilotAI: agents that check news, earnings, insider trades and the economy and can stop a trade; a full run takes under 80 seconds"
       ]
     },
     {
@@ -33,14 +45,14 @@
       "startDate": "2023",
       "summary": "Full-time 2023 to 2024, part-time since.",
       "highlights": [
-        "Multi-tenant gift certificate platform built end to end, with Stripe payments via webhooks",
-        "Booking assistant for a skincare clinic, grounded on the clinic's own content so it won't invent services or prices"
+        "Gift card platform for many businesses, built end to end, with online payments through Stripe",
+        "Booking assistant for a skincare clinic that answers only from the clinic's own information, so it won't make up services or prices"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Institute of Engineering, Thapathali Campus, Tribhuvan University",
+      "institution": "Thapathali Campus, Institute of Engineering, Tribhuvan University",
       "area": "Electronics, Communication and Information Engineering",
       "studyType": "Bachelor of Engineering",
       "startDate": "2019",
@@ -53,28 +65,67 @@
       "title": "Fusemachines AI Fellowship, ML/AI research track",
       "date": "2023",
       "awarder": "Fusemachines",
-      "summary": "Selected in the top 3% of the national applicant pool."
+      "summary": "Selected in the top 3% of national applicants."
     }
   ],
   "projects": [
     {
-      "name": "Natural language to MongoDB query generation",
-      "description": "Schema-aware T5 model trained on a self-checked synthetic corpus; beat a schema-agnostic baseline on complex operators.",
-      "keywords": ["T5", "NL2Query", "MongoDB", "Synthetic data"]
+      "name": "Plain English to database queries",
+      "description": "A T5 model that also reads the database layout; it beat a model without that on hard MongoDB queries.",
+      "keywords": [
+        "T5",
+        "MongoDB",
+        "Natural language to query"
+      ]
     },
     {
-      "name": "IoT crop recommendation",
-      "description": "ESP8266 sensor network and an SVM classifier, served over FastAPI.",
+      "name": "Crop recommendation from field sensors",
+      "description": "Wireless sensors read the soil; a machine learning model suggests what to plant.",
       "url": "https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI",
-      "keywords": ["IoT", "SVM", "FastAPI"]
+      "keywords": [
+        "IoT",
+        "Machine learning",
+        "FastAPI"
+      ]
     }
   ],
   "skills": [
-    { "name": "AI agents", "keywords": ["OpenAI Agents SDK", "LangGraph", "Multi-agent orchestration"] },
-    { "name": "Evaluation", "keywords": ["LangSmith", "promptfoo", "CI regression gates"] },
-    { "name": "Machine learning", "keywords": ["PyTorch", "XGBoost", "CatBoost"] },
-    { "name": "Backend", "keywords": ["FastAPI", "Django", "PostgreSQL"] },
-    { "name": "Infrastructure", "keywords": ["Docker", "Terraform", "AWS", "GCP"] }
+    {
+      "name": "AI agents",
+      "keywords": [
+        "OpenAI Agents SDK",
+        "LangGraph",
+        "LangSmith"
+      ]
+    },
+    {
+      "name": "Machine learning",
+      "keywords": [
+        "PyTorch",
+        "XGBoost",
+        "CatBoost"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Django",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": [
+        "Docker",
+        "AWS",
+        "GCP"
+      ]
+    }
   ],
-  "meta": { "canonical": "https://aashishpant.com.np/resume.json", "lastModified": "2026-09-27" }
+  "meta": {
+    "canonical": "https://aashishpant.com.np/resume.json",
+    "lastModified": "2026-10-05"
+  }
 }
