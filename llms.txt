@@ -33,8 +33,8 @@ This file is a plain summary of https://aashishpant.com.np for language models a
 - TradePilotAI (DevDash), trade-check agents: check news, earnings, insider trades and the economy, and can stop a trade; a full run takes under 80 seconds.
 - Plain English to database queries: a T5 model that also reads the database layout; it beat a model without that on hard MongoDB queries.
 - [Crop recommendation from field sensors](https://github.com/aashishpnt/IoT-Device-for-Crop-Recommendation-using-AI): wireless sensors read the soil; a machine learning model suggests what to plant.
-- [Gift card platform for many businesses](https://giftcards.atrusta.com) (Atrusta): built end to end, with online payments through Stripe.
-- Booking assistant for a skincare clinic (Atrusta): answers only from the clinic's own information, so it won't make up services or prices.
+- [Gift card platform for many businesses](https://giftcards.atrusta.com) (Atrusta): built end to end with Django REST Framework, React, Tailwind, PostgreSQL, Redis, Celery, live updates over WebSockets, Stripe payments, QR-code redemption, AWS S3 and Mailgun email.
+- Booking assistant for a skincare clinic (Atrusta): books appointments for clients and adds them to the clinic's calendar.
 
 ## Notes
 

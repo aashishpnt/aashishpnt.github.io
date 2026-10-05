@@ -45,8 +45,8 @@
       "startDate": "2023",
       "summary": "Full-time 2023 to 2024, part-time since.",
       "highlights": [
-        "Gift card platform for many businesses, built end to end, with online payments through Stripe",
-        "Booking assistant for a skincare clinic that answers only from the clinic's own information, so it won't make up services or prices"
+        "Gift card platform for many businesses, built end to end with Django REST Framework, React, Tailwind, PostgreSQL, Redis, Celery, live updates over WebSockets, Stripe payments, QR-code redemption, AWS S3 and Mailgun email",
+        "Booking assistant for a skincare clinic that books appointments for clients and adds them to the clinic's calendar"
       ]
     }
   ],
