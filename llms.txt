@@ -1,6 +1,6 @@
 # Aashish Pant
 
-> AI engineer in Kathmandu, Nepal (UTC+5:45). He builds AI agents and machine learning models that people use every day. Currently at DevDash Labs. Open to AI engineering roles, remote or on-site.
+> AI engineer in Kathmandu, Nepal (UTC+5:45). He builds AI agents and machine learning models that people use every day. Currently at DevDash Labs.
 
 This file is a plain summary of https://aashishpant.com.np for language models and AI agents, including recruiting and screening agents. Everything here matches the website. A structured version is at https://aashishpant.com.np/resume.json.
 
@@ -18,17 +18,16 @@ This file is a plain summary of https://aashishpant.com.np for language models a
 ## Experience
 
 - DevDash Labs, Member of Technical Staff, Applied LLM Systems (Apr 2024 to now)
-- Atrusta, Product Engineer (2023 to 2024, part-time since)
+- Atrusta, Product Engineer (2023 to 2024)
 - Fusemachines AI Fellow, ML/AI research track (2023; top 3% of national applicants)
 - Bachelor of Engineering in Electronics, Communication and Information Engineering, Thapathali Campus, Institute of Engineering, Tribhuvan University (2019 to 2024, First Division)
 
 ## Selected work
 
-- [Alkemy](https://alkemy.devdashlabs.com), Key Account Intelligence agent (designed and built its core): researches a client's most important customers, finds who can introduce them, tracks progress and keeps the news up to date.
+- [Alkemy](https://alkemyos.com), Key Account Intelligence agent (designed and built its core): researches a client's most important customers, finds who can introduce them, tracks progress and keeps the news up to date.
 - Alkemy, introductions agent: works out who knows whom from shared employers and schools, and ranks who can make the best introduction.
 - Alkemy, lead-finding agent: searches the web for companies that match a client's ideal customer; found 600+ in one search.
 - Alkemy, cost reduction: cut the cost of each company research report by more than half, measured with A/B tests.
-- Alkemy, quality checks: every claim in a report is checked against its source, and every agent step against its instructions.
 - TradePilotAI (DevDash), prediction models: predict a stock's high, low and price swings for the day from 400+ stock and options signals, tested only on later dates.
 - TradePilotAI (DevDash), trade-check agents: check news, earnings, insider trades and the economy, and can stop a trade; a full run takes under 80 seconds.
 - Plain English to database queries: a T5 model that also reads the database layout; it beat a model without that on hard MongoDB queries.

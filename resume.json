@@ -5,7 +5,7 @@
     "label": "AI Engineer",
     "email": "aashishpnt@gmail.com",
     "url": "https://aashishpant.com.np",
-    "summary": "AI engineer who builds AI agents and machine learning models: agents that research companies, and prediction models for stock trading. Open to AI engineering roles, remote or on-site.",
+    "summary": "AI engineer who builds AI agents and machine learning models: agents that research companies, and prediction models for stock trading.",
     "location": {
       "city": "Kathmandu",
       "countryCode": "NP"
@@ -34,7 +34,6 @@
         "Introductions agent (Alkemy): works out who knows whom from shared employers and schools, and ranks who can make the best introduction",
         "Lead-finding agent (Alkemy): searches the web for companies that match a client's ideal customer; found 600+ in one search",
         "Cut the cost of each company research report by more than half, measured with A/B tests",
-        "Quality checks: every claim in a report is checked against its source, and every agent step against its instructions",
         "TradePilotAI: models that predict a stock's high, low and price swings for the day from 400+ stock and options signals, tested only on later dates",
         "TradePilotAI: agents that check news, earnings, insider trades and the economy and can stop a trade; a full run takes under 80 seconds"
       ]
@@ -43,11 +42,11 @@
       "name": "Atrusta",
       "position": "Product Engineer",
       "startDate": "2023",
-      "summary": "Full-time 2023 to 2024, part-time since.",
       "highlights": [
         "Gift card platform for many businesses, built end to end with Django REST Framework, React, Tailwind, PostgreSQL, Redis, Celery, live updates over WebSockets, Stripe payments, QR-code redemption, AWS S3 and Mailgun email",
         "Booking assistant for a skincare clinic that books appointments for clients and adds them to the clinic's calendar"
-      ]
+      ],
+      "endDate": "2024"
     }
   ],
   "education": [
@@ -126,6 +125,6 @@
   ],
   "meta": {
     "canonical": "https://aashishpant.com.np/resume.json",
-    "lastModified": "2026-10-05"
+    "lastModified": "2026-10-06"
   }
 }
